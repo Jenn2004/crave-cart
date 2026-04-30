@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Crave Cart</h1>
+    <h2>SignUp</h2>
+    <form action="{% url 'signup'%}" method='POST'>
+        {% csrf_token %}
+        Username: <input type="text" name="username">
+        <br><br>
+        Password: <input type="password" name="password">
+        <br><br>
+        Email: <input type="email" name="email">
+        <br><br>
+        Phone Number: <input type="phone" name="phno">
+        <br><br>
+        Address: <textarea name="address"></textarea>
+        <br><br>
+        <button type="submit">SignUp</button>
+    </form>
+</body>
+</html>
