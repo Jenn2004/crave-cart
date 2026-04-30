@@ -21,5 +21,5 @@ def signup(request):
         address = request.POST.get('address')
         return HttpResponse("Signup successfully!")
     else:
-        return HttpResponse("Invalid credentials")
+        return HttpResponse("Invalid credentials.")
         
